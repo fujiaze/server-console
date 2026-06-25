@@ -89,7 +89,7 @@ gh auth login
 验证认证：
 ```powershell
 gh auth status
-# 应输出: ✓ Logged in to github.com as YOUR_USERNAME
+# 应输出: ✓ Logged in to github.com as fujiaze
 ```
 
 ### 2.2 初始化本地仓库
@@ -154,7 +154,7 @@ gh repo create server-console --public --source=. --push --description "Encrypte
 gh repo create server-console --private --source=. --push --description "Encrypted remote server management console"
 ```
 
-推送成功后，仓库地址为：`https://github.com/YOUR_USERNAME/server-console`
+推送成功后，仓库地址为：`https://github.com/fujiaze/server-console`
 
 ### 2.5 后续更新推送
 
@@ -175,7 +175,7 @@ git push
 
 ```bash
 # 从 GitHub 一键安装
-curl -sSL https://github.com/YOUR_USERNAME/server-console/raw/main/install.sh | bash
+curl -sSL https://github.com/fujiaze/server-console/raw/main/install.sh | bash
 ```
 
 安装脚本会自动：
@@ -202,8 +202,8 @@ apk add python3 py3-pip
 pip3 install cryptography
 
 # 2. 下载脚本
-curl -sSL https://github.com/YOUR_USERNAME/server-console/raw/main/server_agent.py -o /root/server_agent.py
-curl -sSL https://github.com/YOUR_USERNAME/server-console/raw/main/config_manager.py -o /root/config_manager.py
+curl -sSL https://github.com/fujiaze/server-console/raw/main/server_agent.py -o /root/server_agent.py
+curl -sSL https://github.com/fujiaze/server-console/raw/main/config_manager.py -o /root/config_manager.py
 
 # 3. 首次配置
 python3 /root/server_agent.py --setup
@@ -531,7 +531,7 @@ rm -rf ~/.astrometry/
 ### 9.3 GitHub 仓库删除
 
 ```bash
-gh repo delete YOUR_USERNAME/server-console --yes
+gh repo delete fujiaze/server-console --yes
 ```
 
 ---
