@@ -1,0 +1,58 @@
+# ============================================================
+# 白名单模式：默认排除所有文件，只允许以下工具核心文件
+# 这样确保不会误传隐私文件、大文件、临时文件到 GitHub
+# ============================================================
+
+# 默认排除根目录下所有文件
+/*
+
+# ===== 允许的工具核心文件 =====
+!.gitignore
+!README.md
+!CHANGELOG.md
+!DEPLOYMENT.md
+!.env.example
+
+# Python 源码（仅控制台工具）
+!server_agent.py
+!local_console.py
+!config_manager.py
+!setup_ssh_key.py
+!deploy.py
+!scan_privacy.py
+
+# 安装脚本
+!install.sh
+
+# ===== 仍需排除的敏感类型（即使上面允许也排除）=====
+# 配置文件（含真实密码/IP）
+*.conf
+*.env
+!*.env.example
+
+# SSH/SSL 密钥
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+id_ecdsa*
+known_hosts*
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志
+*.log
