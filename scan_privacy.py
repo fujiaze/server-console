@@ -17,8 +17,10 @@ SCAN_FILES = [
     'install.sh',
     '.env.example',
     'README.md',
+    'README_EN.md',
     'CHANGELOG.md',
     'DEPLOYMENT.md',
+    'skills/server-console/SKILL.md',
 ]
 
 # 需要排除的文件（含敏感信息，不应上传到 GitHub）
